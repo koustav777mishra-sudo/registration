@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="/" method="post">
+
+        <!-- First Name -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="first_name"
+               placeholder="Enter First Name" required>
+        <br><br>
+
+        <!-- Last Name -->
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="last_name"
+               placeholder="Enter Last Name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter Email Address" required>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter Phone Number"
+               pattern="[0-9]{10}"
+               maxlength="10" required>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+
+        <!-- Reset Button -->
+        <button type="reset">Clear</button>
+
+    </form>
+    
+</body>
+</html>
